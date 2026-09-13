@@ -1,20 +1,50 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Hrithik N L — Portfolio
 
-# Run and deploy your AI Studio app
+Personal portfolio for Hrithik N L, a full-stack and AI/ML engineer based in Bengaluru. The site showcases selected projects, skills, experience, education, and a downloadable resume.
 
-This contains everything you need to run your app locally.
+## Tech Stack
 
-View your app in AI Studio: https://ai.studio/apps/05f67efd-77b5-4347-92a0-b4d678611ea8
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS 4
+- React Router
+- Motion
+- Lucide React
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+**Prerequisites:** Node.js 18+
 
+```bash
+npm install
+npm run dev
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Open `http://localhost:3000` in your browser.
+
+## Available Scripts
+
+```bash
+npm run dev      # Start the Vite development server
+npm run lint     # Run the TypeScript check
+npm run build    # Create a production build
+npm run preview  # Preview the production build locally
+```
+
+## Contact Form
+
+The Home page contact form is prepared for Web3Forms. Replace `REPLACE_WITH_WEB3FORMS_ACCESS_KEY` in `src/pages/Home.tsx` with the access key from your Web3Forms account before deploying.
+
+## Resume
+
+The navigation Resume button serves `public/Resume_portoflio.pdf` and downloads it as `Hrithik-N-L-Resume.pdf`.
+
+## Deploy With Vercel
+
+1. Import this repository into Vercel.
+2. Use `npm run build` as the build command.
+3. Use `dist` as the output directory.
+4. Add your custom domain in Vercel project settings.
+
+Vercel detects the Vite setup automatically, so no additional server configuration is required.
