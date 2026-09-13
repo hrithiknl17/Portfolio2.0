@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import "tailwindcss";
+
+
+@variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: 'ITC Garamond Std';
+  src: url('/fonts/ITCGaramondStd-LightNarrow.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mudstone Sans';
+  src: url('/fonts/Mudstone-Sans-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mudstone';
+  src: url('/fonts/Mudstone-Sans-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: "ITC Garamond Std", "ITC Garamond", "EB Garamond", "Garamond", ui-serif, Georgia, serif;
+  --font-display: "Mudstone Sans", "Mudstone", "Syne", sans-serif;
+  --font-mudstone: "Mudstone Sans", "Mudstone", sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #ffffff;
+    color: #17150f;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+
+  :focus-visible {
+    outline: 2px solid #2563eb; /* blue-600 */
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+}
+
