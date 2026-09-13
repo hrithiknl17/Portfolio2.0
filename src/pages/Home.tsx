@@ -348,7 +348,7 @@ export function Home() {
                 <button type="button" onClick={() => setShowContactForm(false)} className="rounded-full border border-stone-200 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-stone-600 transition hover:border-stone-400 hover:text-stone-950">Back</button>
               </div>
               <form className="mt-5 grid gap-3 sm:grid-cols-2" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_ACCESS_KEY" />
+                <input type="hidden" name="access_key" value= "b9ca12bc-2859-41a5-a345-3d88c343fc7d"/>
                 <input type="hidden" name="subject" value="New portfolio message" />
                 <input type="hidden" name="from_name" value="Hrithik N L portfolio" />
                 <input name="name" required placeholder="Your name" aria-label="Your name" className="rounded-xl border border-stone-200 bg-stone-50 px-4 py-3 text-sm text-stone-950 outline-none transition placeholder:text-stone-400 focus:border-[#1E50FF] sm:col-span-1" />
